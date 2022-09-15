@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="morphapihelper",
+    name="morphapiwrapper",
     version="1.0",
     author="Morphisdom",
     author_email="info@morphisdom.com",
     description="Wrapper functions for creating APIs in Morphisdom",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/morphisdom/morphapihelper",
+    url="https://github.com/morphisdom/morphapiwrapper",
     project_urls={
-        "Bug Tracker": "https://github.com/morphisdom/morphapihelper/issues",
+        "Bug Tracker": "https://github.com/morphisdom/morphapiwrapper/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",

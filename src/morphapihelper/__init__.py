@@ -1,5 +1,5 @@
 from flask import *
-from morphapihelper.gcsbase import *
+from morphapiwrapper.gcsbase import *
 import requests
 import ast
 import google.auth.transport.requests
