@@ -1,0 +1,4 @@
+flask
+requests
+google_cloud_storage
+google-auth
