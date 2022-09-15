@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
-Name: morphapihelper
+Name: morphapiwrapper
 Version: 1.0
 Summary: Wrapper functions for creating APIs in Morphisdom
-Home-page: https://github.com/morphisdom/morphapihelper
+Home-page: https://github.com/morphisdom/morphapiwrapper
 Author: Morphisdom
 Author-email: info@morphisdom.com
-Project-URL: Bug Tracker, https://github.com/morphisdom/morphapihelper/issues
+Project-URL: Bug Tracker, https://github.com/morphisdom/morphapiwrapper/issues
 Keywords: API constructor,Flask API,Google cloud storage base,microservices
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -14,24 +14,24 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
 
-# morphapihelper
+# morphapiwrapper
 ### Wrapper functions for creating APIs in Morphisdom
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 
-The morphapihelper package contains the wrapper functions to build a API for morphisdom
+The morphapiwrapper package contains the wrapper functions to build a API for morphisdom
 
 ### Get started
 You can install the package by running the following command
 
 ```python
-pip install morphapihelper
+pip install morphapiwrapper
 ```
 
 Then load the package in Python by running the following command
 ```python
-from morphapihelper import app, addapproute
+from morphapiwrapper import app, addapproute
 ```
 
 ### Write your custom function
@@ -56,3 +56,14 @@ def testfunction(requestdata,filereaderwriter):
 	billunit = 2
 	return downloadeddata,billunit
 ```
+
+### Wrap your function
+Once your function is created wrap your function in an flask app with the following code snippet
+
+```python
+app = addapproute(app, testfunction)
+```
+
+The returned app is a flask app which has a route _/testfunction_ added in it. 
+On calling this route _testfunction_ is executed
+

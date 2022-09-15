@@ -1,21 +1,21 @@
-# morphapihelper
+# morphapiwrapper
 ### Wrapper functions for creating APIs in Morphisdom
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 
-The morphapihelper package contains the wrapper functions to build a API for morphisdom
+The morphapiwrapper package contains the wrapper functions to build a API for morphisdom
 
 ### Get started
 You can install the package by running the following command
 
 ```python
-pip install morphapihelper
+pip install morphapiwrapper
 ```
 
 Then load the package in Python by running the following command
 ```python
-from morphapihelper import app, addapproute
+from morphapiwrapper import app, addapproute
 ```
 
 ### Write your custom function

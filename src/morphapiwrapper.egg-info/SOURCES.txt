@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/morphapiwrapper/__init__.py
+src/morphapiwrapper/gcsbase.py
+src/morphapiwrapper/testscript.py
+src/morphapiwrapper.egg-info/PKG-INFO
+src/morphapiwrapper.egg-info/SOURCES.txt
+src/morphapiwrapper.egg-info/dependency_links.txt
+src/morphapiwrapper.egg-info/requires.txt
+src/morphapiwrapper.egg-info/top_level.txt
